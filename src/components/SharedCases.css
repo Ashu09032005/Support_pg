@@ -1,0 +1,12 @@
+.shared-cases {
+    padding: 1rem 2rem;
+    position: absolute;
+    /* Sticks to a specific position */
+    top: 4rem;
+    color: white;
+    left: 0;
+    /* Aligns content to the right edge */
+    text-align: right;
+    display: flex;
+    flex-direction: row;
+}

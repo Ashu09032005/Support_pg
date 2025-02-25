@@ -1,0 +1,39 @@
+.navbar {
+    width: 100%;
+    /* Fix overflow issue */
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    color: white;
+    box-sizing: border-box;
+    /* Includes padding inside width */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.2rem;
+    margin: 0;
+    /* Remove margin issues */
+    padding: 0;
+}
+
+.nav-links li {
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.nav-links li:hover {
+    color: #f0a500;
+}
+
+#log {
+    background-color: #034f84;
+    color: white;
+    border-color: white;
+}
