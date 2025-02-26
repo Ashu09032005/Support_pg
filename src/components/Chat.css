@@ -1,0 +1,94 @@
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 80px);
+    /* Subtract navbar height */
+    margin-top: 10px;
+    /* Pushes it below the navbar */
+
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+    /* Prevents unnecessary scrolling */
+}
+
+
+/* Header */
+.chat-header {
+    padding: 12px;
+
+    font-size: 18px;
+    font-weight: bold;
+    border-bottom: 1px solid #29293d;
+    text-align: center;
+}
+
+/* Messages */
+.chat-messages {
+    flex: 1;
+    overflow-y: auto;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* Individual Message */
+.message {
+    max-width: 70%;
+    padding: 10px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+    position: relative;
+}
+
+/* User Messages */
+.message.user {
+    background-color: #2A2A40;
+    align-self: flex-end;
+    text-align: right;
+}
+
+/* Support Messages */
+.message.support {
+    background-color: #1C1C2D;
+    align-self: flex-start;
+    text-align: left;
+}
+
+/* Message Timestamp */
+.message-time {
+    font-size: 11px;
+    color: #888;
+    margin-top: 5px;
+}
+
+/* Chat Input */
+.chat-input {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    background-color: #131324;
+    border-top: 1px solid #29293d;
+}
+
+/* Input Field */
+.chat-input input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 6px;
+    background-color: #1C1C2D;
+    color: white;
+    border: none;
+    outline: none;
+    margin: 0 10px;
+}
+
+/* Buttons */
+.mic-btn,
+.send-btn {
+    background: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 6px;
+}

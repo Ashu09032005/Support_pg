@@ -3,7 +3,7 @@ import Navbar from './components/Navbar';
 import './App.css';
 import SearchBar from './components/SearchBar';
 import SharedCases from './components/SharedCases';
-
+import Chat from "./components/Chat";
 const App = () => {
   return (
     <div className="background">
@@ -12,6 +12,7 @@ const App = () => {
       <div className="app">
         <main className="main-content">
           <SharedCases />
+          <Chat />
           <SearchBar />
         </main>
       </div>
